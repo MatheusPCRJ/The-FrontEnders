@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/styleglobal.css">
+    <!-- css do Bootstrap  -->
+    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>The FrontEnders</title>
 </head>
+
 <body>
 
     <header class="cabecalhoCbl">
@@ -24,7 +28,7 @@
 
         <!-- Menu de navegação do site -->
         <nav class="navegacaoMenu" id="navegacaoId">
-            
+
             <!-- Configuração do JavaScript para o Menu Lateral -->
             <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
 
@@ -32,25 +36,47 @@
             <a href="planos.html">Serviços</a>
             <a href="nossocontato.html">Contato</a>
             <a href="login.html">Login</a>
-            
+
         </nav>
 
     </header>
 
     <main>
+        <div class="box">
 
 
+            <form class="form-signin">
+                <img class="mb-4" src="./imagens/The FrontEnders.png" alt="" width="250">
+                <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+                <label for="inputEmail" class="sr-only">Endereço de email</label>
+                <input type="email" id="idForm" class="form-control" placeholder="Seu email" required autofocus>
+                <label for="inputPassword" class="sr-only">Senha</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Lembrar de mim
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="enviarBtn();">Login</button>
+                <!-- chamada usando o onclick direto no html  -->
 
+                <p class="forgot">
+                    Esqueceu sua senha? <a href="http://"> Clique aqui.</a>
+                </p>
+        </div>
+        </form>
 
-
-
-
+        <span id="infoForm"></span>
 
 
     </main>
-    <footer></footer>
+    <footer>
+
+
+    </footer>
 
     <script src="js/login.js"></script>
     <script src="js/jsglobal.js"></script>
 </body>
+
 </html>

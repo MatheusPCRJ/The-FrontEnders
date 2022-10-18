@@ -1,3 +1,69 @@
 .olamundo{
     background-color: rgb(21, 194, 5);
 }
+
+html,
+body {
+  height: 100%;
+}
+
+
+main{
+    display: flex;
+    height: 110vh;
+    width: 100vw;
+}
+
+.box{
+    display: flex;
+    width: 800px;
+    border-radius: 10px;
+    margin: auto;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.form-control{
+    margin-top: 20px;
+}
+
+
+#inputPassword, #idForm{
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: #00a9a0;
+}
+
+.forgot{
+    margin-top: 20px;
+}
