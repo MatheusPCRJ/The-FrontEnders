@@ -1,5 +1,9 @@
-.olamundo{
-    background-color: rgb(21, 194, 5);
+.olamundo {
+  background-color: rgb(21, 194, 5);
+}
+
+* {
+  margin: 0;
 }
 
 html,
@@ -7,28 +11,35 @@ body {
   height: 100%;
 }
 
-
-main{
-    display: flex;
-    height: 110vh;
-    width: 100vw;
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.box{
-    display: flex;
-    width: 800px;
-    border-radius: 10px;
-    margin: auto;
+.box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
 }
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -36,14 +47,17 @@ main{
   padding: 10px;
   font-size: 16px;
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
@@ -51,19 +65,20 @@ main{
 }
 
 
-.form-control{
-    margin-top: 20px;
+.form-control {
+  margin-top: 20px;
 }
 
 
-#inputPassword, #idForm{
-    border-radius: 10px;
+#inputPassword,
+#idForm {
+  border-radius: 10px;
 }
 
-.btn-primary{
-    background-color: #00a9a0;
+.btn-primary {
+  background-color: #00a9a0;
 }
 
-.forgot{
-    margin-top: 20px;
+.forgot {
+  margin-top: 20px;
 }
