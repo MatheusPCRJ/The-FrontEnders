@@ -172,6 +172,10 @@
               <input type="text" class="form-control" id="address" required>
             </div>
             <div class="col-md-4">
+              <label for="state" class="form-label">Número</label>
+                <input type="text" class="form-control" id="cep">
+            </div>
+            <div class="col-md-4">
               <label for="state" class="form-label">Complemento</label>
                 <input type="text" class="form-control" id="cep">
             </div>
@@ -187,7 +191,7 @@
                 <input type="text" class="form-control" id="address">
             </div>
 
-            <div class="cep">
+            <div class="col-md-4">
               <label for="zip" class="form-label">CEP</label>
               <input type="text" class="form-control" id="zip" placeholder="00000-000" required>
               <div class="invalid-feedback">
@@ -197,7 +201,8 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Cadastrar</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" style="margin-bottom:20px">Cadastrar</button>
+     
         </form>
       </div>
     </div>
@@ -211,3 +216,24 @@
       <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
 </body>
 </html>
+
+
+//para configurar javascript do cep
+//evento de escuta (keyup) no input do cep
+//a função acionada pelo evento key up pegará o conteúdo do input do cep
+//a variável que recebeu o valor do input será colocada na requisição XMLHttp Request abaixo
+function load() {
+  var requisicao = new XMLHttpRequest();
+  requisicao.open("GET", `https://viacep.com.br/ws/${x}/json/`);
+
+  requisicao.send();
+
+  requisicao.onload = function () {
+    if (requisicao.status == 200) {
+      resposta = requisicao.response;
+      responseObj = JSON.parse(resposta);
+      //alerta para teste -->> alert(responseObj.results[0].name.first);
+      document.querySelector("#demo").innerHTML = responseObj.results[0].name.first + " " + responseObj.results[0].name.last; //aqui será trabalhado aonde se colocará o endereço
+    }
+  };  
+}
