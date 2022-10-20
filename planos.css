@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 0 10px;
+}
+
+/* Início do design do card Plano Básico */
+.mainPlanos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h4{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: aqua;
+}
+.valorR{
+    padding-left: 34px;
+}
+.ValorQuarenta{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.allmoth{
+    padding-left: 21%;
+}
+.sevenDays{
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+.comeceAgora{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+button{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: aqua;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.planoBasico{
+    background-color: rgba(0, 0, 0, 1);
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 17rem; 
+    border-radius: 15px;
+    color: white;
+}
+.explicationBasic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tituloBasic{
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+.descricaoBasic{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.sectionBasicB{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 25px;
+    
+}
+.sectionBasicB:hover{
+    font-size: 35px;
+    color: red;
+}
+.sectionBasicV:hover{
+    font-size: 35px;
+    color: red;
+}
+/* Fim do Design do Card Básico */
+
+.planoVip{
+    background-color: rgba(0, 0, 0, 1);
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 17rem; 
+    border-radius: 15px;
+    color: white;
+}
+.planoIntermediario{
+    background-color: rgba(0, 0, 0, 1);
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 17rem; 
+    border-radius: 15px;
+    color: white;
+}
+#basicB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explDoBasico {
+    background-color: rgba(232, 232, 232, 1);
+    display: flex;
+    margin-bottom: 80px;
+    padding: 20px;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tituloExplDoBasico{
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+.example{
+    display: flex;
+    justify-content: center;
+}
+.descricaoDoservicoB{
+    margin-bottom: 30px;
+}
+.comeceAgora2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.descricaoVip{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.sectionBasicV{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 25px;
+}
+.example img {
+    width: min(366px, 86%);
+    height: 100%;
+    margin-bottom: 30px;
+}
+#vipV{
+    background-color: rgba(232, 232, 232, 1);
+    display: flex;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.containerTituloDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.example2{
+    display: flex;
+    justify-content: center;
+}
+.example2 img{
+    width: min(366px, 86%);
+    height: 100%;
+    margin-bottom: 20px;
+}
+.chamadaDeVideo{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.explicaVideo{
+    /* background-color: aqua; */
+    display: flex;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.comeceAgora3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 55px;
+}
+a.buttonClass1:hover, a.buttonClass1:active{
+   
+}
+.buttonClass1:hover{
+    background: red;
+    transition: 0.8s;
+
+}
+.buttonClass1{
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 704px){
+    .descricaoBasic{
+        padding-bottom: 59px;
+    }
+}
+
+@media only screen and (min-width: 1439px){
+    #vipV{
+        display: flex;
+
+    }
+    .containerTituloDesc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .containerDiv{
+        flex-direction: row;
+    }
+    .example img {
+        width: 500px;
+    }
+    .example2{
+        width: 600px;
+        margin-left: 320px;
+    }
+    .descricaoDoservicoB{
+        width: 54%;
+    }
+    .explicaVideo{
+        width: 50%;
+        padding: 0;
+    }
+    .chamadaDeVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
+}
