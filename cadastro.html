@@ -8,46 +8,16 @@
     <link rel="stylesheet" href="css/styleglobal.css">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
     <title>The FrontEnders</title>
-</head>
-<body>
 
-    <header class="cabecalhoCbl">
-
-        <!-- Logo da empresa -->
-        <div class="logoEmpresa">
-            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
-        </div>
-
-        <!-- Imagem hamburgue para abrir o menu lateral -->
-        <div class="imgHamburgue">
-            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
-        </div>
-
-        <!-- Menu de navegação do site -->
-        <nav class="navegacaoMenu" id="navegacaoId">
-            
-            <!-- Configuração do JavaScript para o Menu Lateral -->
-            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
-
-            <a href="index.html">Home</a>
-            <a href="planos.html">Serviços</a>
-            <a href="nossocontato.html">Contato</a>
-            <a href="login.html">Login</a>
-            
-        </nav>
-
-    </header>
-
-    <main>
-        <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+
 <meta name="theme-color" content="#712cf9">
 
 
@@ -108,129 +78,136 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.css" rel="stylesheet">
   </head>
+    <header class="cabecalhoCbl">
+
+        <!-- Logo da empresa -->
+        <div class="logoEmpresa">
+            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
+        </div>
+
+        <!-- Imagem hamburgue para abrir o menu lateral -->
+        <div class="imgHamburgue">
+            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+        </div>
+
+        <!-- Menu de navegação do site -->
+        <nav class="navegacaoMenu" id="navegacaoId">
+            
+            <!-- Configuração do JavaScript para o Menu Lateral -->
+            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+
+            <a href="index.html">Home</a>
+            <a href="planos.html">Serviços</a>
+            <a href="nossocontato.html">Contato</a>
+            <a href="login.html">Login</a>
+            
+        </nav>
+
+    </header>
+
+    <main>
+
   <body class="bg-light">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+  
       <h2>Formulário de Cadastro</h2>
-      <p class="lead">Preencha os campos abaixo para se cadastrar em nosso site, não esqueça de nos enviar o formulário</p>
+      <p class="lead">Preencha os campos abaixo para se cadastrar em nosso site</p>
     </div>
-
-          
-
-       
       </div>
+
       <div class="col-md-7 col-lg-8">
        
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">First name</label>
+              <label for="firstName" class="form-label">Nome</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
-                Nome
+               
               </div>
             </div>
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">E-mail <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="email@email.com">
               <div class="invalid-feedback">
-                Valid last name is required.
+                
               </div>
             </div>
-
             <div class="col-12">
-              <label for="username" class="form-label">Nome de usuário</label>
+              <label for="username" class="form-label">Nome de Usuário</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" placeholder="nome de usuário" required>
               <div class="invalid-feedback">
-                  Your username is required.
                 </div>
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted"></span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Senha</label>
+                  <input type="text" class="form-control" id="Senha" placeholder="6 dígitos" value="" required>
+                  <div class="invalid-feedback">
+                   
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="confsenha" class="form-label">Confirmação de senha</label>
+                  <input type="text" class="form-control" id="senhaconf" required>
+                </div>
+    
 
             <div class="col-12">
               <label for="address" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
+              <input type="text" class="form-control" id="address" required>
             </div>
-
-            <div class="col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-            </div>
-
-            <div class="col-md-5">
-              <label for="country" class="form-label">País</label>
-              <select class="form-select" id="country" required>
-                <option value="">Escolha</option>
-                <option>Brasil</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
+            <div class="col-md-4">
+              <label for="state" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="cep">
             </div>
 
             <div class="col-md-4">
-              <label for="state" class="form-label">State</label>
-              <select class="form-select" id="state" required>
-                <option value="">Escolha</option>
-                <option>California</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
+              <label for="state" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+            <br>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="address">
             </div>
 
-            <div class="col-md-3">
+            <div class="cep">
               <label for="zip" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <input type="text" class="form-control" id="zip" placeholder="00000-000" required>
               <div class="invalid-feedback">
-                Zip code required.
               </div>
             </div>
           </div>
 
           <hr class="my-4">
 
-    
-
-            
-
-
-    
-          </div>
-
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">cadastrar</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Cadastrar</button>
         </form>
       </div>
     </div>
   </main>
-
-   
-  </footer>
 
 
     <script src="js/cadastro.js"></script>
     <script src="js/jsglobal.js"></script>
     <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-      <script src="form-validation.js"></script>
+      <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
 </body>
 </html>
