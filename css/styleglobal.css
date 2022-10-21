@@ -16,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    background-color: rgba(36, 99, 113, 1);
+    background-color: rgba(2, 215, 228, 1);
 }
 
 
@@ -30,7 +30,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(2, 215, 228, 1);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -40,13 +40,13 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s;
 }
   
 .navegacaoMenu a:hover {
-    color: #f1f1f1;
+    color: #f10e0e;
 }
   
 .navegacaoMenu .closebtn {
@@ -62,6 +62,9 @@ body{
 
 /* Início da configuração do Menu horizontal para Table e Desktop pequeno, médio e grande. */
 @media only screen and (min-width: 768px){
+    .logoEmpresa img{
+        margin-left: 80px;
+    }
     .imgHamburgue{
         display: none;
     }
@@ -73,9 +76,22 @@ body{
     .navegacaoMenu a{
         display: flex;
         padding: 20px 50px 20px 0px;
+        text-decoration: none;
+
+    }
+    .navegacaoMenu a:hover{
+        text-decoration: underline;
+        color: white;
+        font-weight: bold;
     }
  
     #closebtnId{
         display: none;
     }
+}
+@media only screen and (min-width: 1024px){
+    .logoEmpresa img{
+        margin-left: 200px;
+    }
+
 }
