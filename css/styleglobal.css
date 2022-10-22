@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
@@ -18,7 +21,17 @@ body{
     justify-content:space-between;
     background-color: rgba(2, 215, 228, 1);
 }
-
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(2, 215, 228, 1);
+    color: white;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 25px;
+}
 
 /* Configuração do Menu lateral do W3School. */
 @media only screen and (max-width: 767px){
@@ -43,6 +56,7 @@ body{
     color: #000000;
     display: block;
     transition: 0.3s;
+    font-family: 'Merriweather', serif;
 }
   
 .navegacaoMenu a:hover {
@@ -72,12 +86,15 @@ body{
     .navegacaoMenu{
         display: flex;
         justify-content:space-around;
+        font-size: 20px;
     }
     .navegacaoMenu a{
         display: flex;
-        padding: 20px 50px 20px 0px;
+        padding: 20px 20px 20px 0px;
         text-decoration: none;
-
+        color: black;
+        font-weight: bold;
+        font-family: 'Merriweather', serif;
     }
     .navegacaoMenu a:hover{
         text-decoration: underline;
@@ -88,10 +105,21 @@ body{
     #closebtnId{
         display: none;
     }
+    .cadastroDireita{
+        margin-right: 30px;
+    }
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 992px){
     .logoEmpresa img{
         margin-left: 200px;
     }
+    .navegacaoMenu {
+        font-size: 24px;
+    }
 
+}
+@media only screen and (min-width: 1200px){
+    .navegacaoMenu a {
+        padding: 20px 50px 20px 0px;
+    }
 }

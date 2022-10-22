@@ -119,5 +119,6 @@ section{
   text-decoration:none;
 }
 
-
-
+.card{
+  margin-bottom: 70px;
+}

@@ -100,6 +100,7 @@
             <a href="planos.html">Serviços</a>
             <a href="nossocontato.html">Contato</a>
             <a href="login.html">Login</a>
+            <a href="cadastro.html" class="cadastroDireita">Cadastro</a>
             
         </nav>
 
@@ -206,8 +207,9 @@
         </form>
       </div>
     </div>
+    
   </main>
-
+      <footer>copyright ©</footer>
 
     <script src="js/cadastro.js"></script>
     <script src="js/jsglobal.js"></script>
@@ -218,7 +220,7 @@
 </html>
 
 
-//para configurar javascript do cep
+<!-- //para configurar javascript do cep
 //evento de escuta (keyup) no input do cep
 //a função acionada pelo evento key up pegará o conteúdo do input do cep
 //a variável que recebeu o valor do input será colocada na requisição XMLHttp Request abaixo
@@ -232,8 +234,8 @@ function load() {
     if (requisicao.status == 200) {
       resposta = requisicao.response;
       responseObj = JSON.parse(resposta);
-      //alerta para teste -->> alert(responseObj.results[0].name.first);
+      //alerta para teste ->> alert(responseObj.results[0].name.first);
       document.querySelector("#demo").innerHTML = responseObj.results[0].name.first + " " + responseObj.results[0].name.last; //aqui será trabalhado aonde se colocará o endereço
     }
   };  
-}
+} -->
