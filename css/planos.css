@@ -92,12 +92,12 @@ button{
 }
 .sectionBasicB:hover{
     font-size: 35px;
-    color: red;
+    color: rgb(255, 255, 255);
     transition: 0.5s;
 }
 .sectionBasicV:hover{
     font-size: 35px;
-    color: red;
+    color: rgb(255, 255, 255);
     transition: 0.5s;
 }
 /* Fim do Design do Card Básico */
@@ -223,7 +223,7 @@ button{
 }
 
 .buttonClass1:hover{
-    background: red;
+    background: rgb(255, 255, 255);
     transition: 0.8s;
     transform: scale(1.3);
     
@@ -232,6 +232,7 @@ button{
 .buttonClass1, a{
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 
 
