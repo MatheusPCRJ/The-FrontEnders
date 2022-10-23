@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+body {
+    background-color: rgb(53, 47, 47);
+    color: antiquewhite;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+    /* header*/
+    .all-browsers {
+        margin: 0;
+        padding: 5px;
+        background-color: lightgray;
+      }
+      
+      .all-browsers > h1, .browser {
+        margin: 10px;
+        padding: 5px;
+      }
+      
+      .browser {
+        background: white;
+      }
+      
+      .browser > h2, p {
+        margin: 4px;
+        font-size: 90%;
+      }
+
+      /*conteudo*/
+      
+      .conteudo {
+        border-top:50px;
+        
+        
+      }
+      .conteudoPrincipal button {
+        padding: 10px;
+        border-radius: 50px;
+        background-color: aqua;
+        width: 20rem;
+        height: 50px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+      .conteudoPrincipal button:hover{
+        background: rgb(255, 255, 255);
+        transition: 0.8s;
+        transform: scale(1.3);    
+    }
+    
+    .conteudoPrincipal button, a{
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+
+    
+      
+      .conteudoPrincipal {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        justify-content: space-around;
+        border-top:50px;
+        padding: 0px 10%;
+        
+  
+      }
+      .conteudo img {
+        height: 800px;
+       }
+       span {
+        color: aqua;
+       }
+       span2 {
+        color: aqua;
+        font-size: larger;
+       }
+  
+      .conteudo h1 {
+        font-size:100px;
+      }
+      .conteudo h2 {
+        font-size: 30px;
+      }
+      .conteudo p {
+        font-size: 20px;
+      }
+      
+@media (max-width:1000px){
+    .conteudoPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+}
+      
+  
