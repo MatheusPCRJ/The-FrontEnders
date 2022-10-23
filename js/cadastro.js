@@ -8,7 +8,7 @@ const limparFormulario = (endereco) =>{
     document.getElementById('estado').value = '';
 }
 
-//Cada getElementById corresponde ao ID que vai ficar as informações referentes ao endereço
+//Cada getElementById corresponde ao ID que vão ficar as informações referentes ao endereço
 
 const preencherFormulario = (endereco) =>{
     document.getElementById('endereco').value = endereco.logradouro;
