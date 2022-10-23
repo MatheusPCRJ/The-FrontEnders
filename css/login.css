@@ -82,3 +82,9 @@ main {
 .forgot {
   margin-top: 20px;
 }
+
+/* Id da caixinha do mostrar senha */
+#loginInvalido{
+  font-size: 18px;
+  color: rgb(194, 2, 2);
+}
