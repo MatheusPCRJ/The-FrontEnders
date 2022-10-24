@@ -28,17 +28,16 @@ serviço;
 - Apresentar os planos de assinatura e
 quais benefícios tem em cada plano.<br>
 <img width="300px" height="500px" align="right" src="https://i.pinimg.com/736x/04/01/7e/04017ee1ee1301e183d65021f45d81a2.jpg">
-🖍 Página de cadastro na lista de espera:
-- Deve conter formulário com:
-- Nome
-- E-mail
-- Senha;
-- Confirmação de senha;
-- RG;
-- CEP (que completa os demais campos do
-endereço com consulta à API e trata erros);
-- Campos de endereço (estado, cidade, bairro,
-rua, número, complemento).
+
+🖍 Página de cadastro na lista de espera deve conter formulário com:
+- Nome.
+- E-mail.
+- Senha e Confirmação de senha.
+- RG.
+- CEP (que completa os demais campos do endereço com consulta à 
+API e trata erros).
+- Campos de endereço (estado, cidade, bairro, rua, número, complemento).
+
 
 🖍 Página de contato:
 - Deve conter contato dos alunos
