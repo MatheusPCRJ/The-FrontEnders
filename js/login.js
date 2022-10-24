@@ -63,12 +63,12 @@ let senha = document.querySelector('#password');
 let resposta = document.querySelector('#loginInvalido');
 
 document.querySelector('#botaologin').onclick = function(){
-	if(email.value == "matheusoutros@hotmail.com" && senha.value == "12345"){
+	if(email.value == "teste@gmail.com" && senha.value == "12345"){
 		alert('Login Realizado com sucesso')
 		
 	}
 	 else{
-		resposta.innerHTML=('Login e Senha incorreta, click em "Esqueceu sua Senha?"')
+		resposta.innerHTML=('Login e Senha incorreta, click em <b>"Esqueceu sua Senha?"</b>')
 
 		document.querySelector('#formularioMain').addEventListener("submit", function(event){
 			event.preventDefault();
