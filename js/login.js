@@ -56,3 +56,35 @@ $(function(){
 		init();
 	});
 });
+
+
+let email = document.querySelector('#email');
+let senha = document.querySelector('#password');
+let resposta = document.querySelector('#loginInvalido');
+
+document.querySelector('#botaologin').onclick = function(){
+	if(email.value == "matheusoutros@hotmail.com" && senha.value == "12345"){
+		alert('Login Realizado com sucesso')
+		
+	}
+	 else{
+		resposta.innerHTML=('Login e Senha incorreta, click em "Esqueceu sua Senha?"')
+
+		document.querySelector('#formularioMain').addEventListener("submit", function(event){
+			event.preventDefault();
+		
+		});
+		
+	}
+}
+
+// Função para mostrar a senha na caixinha
+let pegaSenha = document.querySelector('#password');
+function mostraSenha(){
+	if(pegaSenha.type=="password"){
+		pegaSenha.type="text";
+	}
+	else{
+		pegaSenha.type="password";
+	}
+}

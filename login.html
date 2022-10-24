@@ -52,7 +52,7 @@
 
             <div class="row" style="margin-top:20px">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form role="form">
+                    <form role="form" id="formularioMain">
                         <fieldset>
                             <h2>Faça Login</h2>
                             <hr class="colorgraph">
@@ -61,7 +61,9 @@
                             </div>
                             <div class="form-group">
                                 <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha">
+                                <input type="checkbox" onclick="mostraSenha()" class="mostraSenha"> Mostrar Senha
                             </div>
+                            <p id="loginInvalido"></p>
                             <span class="button-checkbox">
                                 <button type="button" class="btn" data-color="info">Lembrar Senha</button>
                                 <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
@@ -70,7 +72,7 @@
                             <hr class="colorgraph">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Login">
+                                    <input type="submit" id="botaologin" class="btn btn-lg btn-success btn-block" value="Login">
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6">
                                     <a href="./cadastro.html" class="btn btn-lg btn-primary btn-block">Registre-se</a>
