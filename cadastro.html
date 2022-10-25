@@ -17,7 +17,7 @@
 <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <meta name="theme-color" content="#712cf9">
 
 
@@ -156,7 +156,7 @@
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">Senha</label>
-                  <input type="text" class="form-control" id="senha" placeholder="6 dígitos" value="" required>
+                  <input type="password" class="form-control" id="senha" placeholder="6 dígitos" value="" required>
                   <div class="invalid-feedback">
                    
                   </div>
@@ -164,7 +164,7 @@
     
                 <div class="col-sm-6">
                   <label for="confsenha" class="form-label">Confirmação de senha</label>
-                  <input type="text" class="form-control" id="confsenha" required>
+                  <input type="password" class="form-control" id="confsenha" required>
                 </div>
     
 
@@ -206,26 +206,10 @@
           </div>
 
           <hr class="my-4">
-          <div class="classeDoBotao" style="width: 40%">
+          <div class="classeDoBotao" style="width: 25%">
             <button class="w-100 btn btn-primary btn-lg" type="submit" style="margin-bottom:20px" >Cadastrar</button>
           </div>
           
-          <!-------acrescentar o sweetalert aqui/parte js
-          Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Seus dados foram cadastrados',
-            showConfirmButton: false,
-            timer: 2000
-          })
-        //parte css
-
-         body {
-          font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
-        }
-        
-        //termina aqui-->
-
         </form>
       </div>
     </div>
@@ -240,24 +224,3 @@
       <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
 </body>
 </html>
-
-
-<!-- //para configurar javascript do cep
-//evento de escuta (keyup) no input do cep
-//a função acionada pelo evento key up pegará o conteúdo do input do cep
-//a variável que recebeu o valor do input será colocada na requisição XMLHttp Request abaixo
-function load() {
-  var requisicao = new XMLHttpRequest();
-  requisicao.open("GET", `https://viacep.com.br/ws/${x}/json/`);
-
-  requisicao.send();
-
-  requisicao.onload = function () {
-    if (requisicao.status == 200) {
-      resposta = requisicao.response;
-      responseObj = JSON.parse(resposta);
-      //alerta para teste ->> alert(responseObj.results[0].name.first);
-      document.querySelector("#demo").innerHTML = responseObj.results[0].name.first + " " + responseObj.results[0].name.last; //aqui será trabalhado aonde se colocará o endereço
-    }
-  };  
-} -->
