@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
 body{
   font-family: 'Open Sans', sans-serif;
-  --dark: #343a40;
+
 }
 
 .col-md-4{
@@ -21,6 +21,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: #ede5e5;;
 }
 
 
@@ -130,5 +131,6 @@ section{
   padding-top: 30px;
   font-size: 36px;
   font-weight: bold;
-
+  background: #ede5e5;
+  color: black;
 }

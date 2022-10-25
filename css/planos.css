@@ -9,7 +9,7 @@
 h1{
     display: flex;
     justify-content: center;
-    margin: 20px 20px 0 10px;
+    margin: 20px 20px 0 60px;
 }
 
 /* Início do design do card Plano Básico */
@@ -17,6 +17,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    line-height: 1.5rem;
 }
 h4{
     margin-bottom: 10px;
@@ -28,12 +29,12 @@ h4{
 .valorR{
     padding-left: 34px;
 }
-.ValorQuarenta{
+.ValorQuarenta {
     display: flex;
     justify-content: center;
     font-size: 30px;
     font-weight: bold;
-    
+    margin-bottom: 15px;
 }
 .allmoth{
     padding-left: 21%;
@@ -138,6 +139,7 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 75vh;
 }
 .tituloExplDoBasico{
     font-weight: bold;
@@ -148,8 +150,9 @@ button{
     display: flex;
     justify-content: center;
 }
-.descricaoDoservicoB{
+.descricaoDoservicoB {
     margin-bottom: 30px;
+    line-height: 2rem;
 }
 .comeceAgora2{
     display: flex;
@@ -167,8 +170,7 @@ button{
     font-size: 25px;
 }
 .example img {
-    width: min(366px, 86%);
-    height: 100%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -214,12 +216,13 @@ button{
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 15px;
+    line-height: 2rem;
 }
 .comeceAgora3{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 55px;
+    margin-top: 22px;
 }
 
 .buttonClass1:hover{
@@ -239,14 +242,31 @@ button{
 
 @media only screen and (min-width: 704px){
     .descricaoBasic{
-        padding-bottom: 59px;
+        padding-bottom: 80px;
+    }
+    .descricaoDoservicoB{
+        padding: 0 150px 0 150px;
+        }
+        .explicaVideo{
+        padding: 0 150px 0 150px;
+        }
+}
+@media only screen and (min-width: 1055px){
+    .descricaoDoservicoB{
+    padding: 0 150px 0 150px;
+    }
+    .explicaVideo{
+    padding: 0 150px 0 150px;
+    }
+    .comeceAgora3 {
+        margin-top: 80px;
     }
 }
 
 @media only screen and (min-width: 1439px){
     #vipV{
         display: flex;
-
+        height: 75vh;
     }
     .containerTituloDesc{
         display: flex;
@@ -258,14 +278,15 @@ button{
         flex-direction: row;
     }
     .example img {
-        width: 500px;
+        width: 400px;
     }
     .example2{
         width: 600px;
-        margin-left: 320px;
+        margin-left: 24%;
     }
     .descricaoDoservicoB{
-        width: 54%;
+        width: min(60%, 60%);
+        padding: 0 50px 0 50px;
     }
     .explicaVideo{
         width: 50%;
@@ -275,6 +296,10 @@ button{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .mainPlanos {
+        height: 70vh;
+        
     }
     
     
