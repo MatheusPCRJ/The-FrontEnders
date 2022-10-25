@@ -1,4 +1,14 @@
-'use strict'
+
+//código para mostrar mensagem de cadastrado ao clicar no botão de cadastrar 
+document.querySelector(".btn-primary").addEventListener('click', () => {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Dados cadastrados',
+        showConfirmButton: false,
+        timer: 2000
+      })
+})
 
 //código para limpeza de formulário ao digitar novamente o CEP
 const limparFormulario = (endereco) =>{
@@ -17,30 +27,32 @@ const preencherFormulario = (endereco) =>{
     document.getElementById('estado').value = endereco.uf;
 }
 
-//código para que o cep apenas aceite os 8 números e ignore letras
-const eNumero = (numero) => /^[0-9]$/.test(numero);
+//código paraidentificar apenas números e validar CEP
 
-const cepValido = (cep) => cep.lenght = 8 && eNumero(cep);
+const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
-//código para limpar o formulário quando for digitar o CEP novamente
+const cepValido = (cep) => cep.length == 8 && eNumero(cep); 
+
 const pesquisarCep = async() => {
     limparFormulario();
+
 //código para extrair os dados da API e mostrar os dados
-    const cep = document.getElementById('cep').value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const cep = document.getElementById('cep').value.replace("-","");
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (cepValido(cep)){
-    const dados = await fetch(url);
-    const endereco = await dados.json();
-    if (endereco.hasOwnProperty('erro')){
-        document.getElementById('endereco').value = 'CEP Não Encontrado' ;
-    }else {
-        preencherFormulario(endereco);
-         }
+        const dados = await fetch(url);
+        const endereco = await dados.json();
+        if (endereco.hasOwnProperty('erro')){
+            document.getElementById('endereco').value = 'CEP não encontrado!';
+        }else {
+            preencherFormulario(endereco);
+        }
     }else{
-        document.getElementById('endereco').value = 'CEP Incorreto' ;
+        document.getElementById('endereco').value = 'CEP incorreto!';
     }
-
-} 
-
+     
+}
+//código para extrair API quando usuário retirar mouse do campo
 document.getElementById('cep')
-        .addEventListener('focusout',pesquisarCep);
+        .addEventListener('focusout', pesquisarCep);
+
