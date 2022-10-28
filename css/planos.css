@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 h1{
     display: flex;
@@ -18,6 +22,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     line-height: 1.5rem;
+    align-items: center;
 }
 h4{
     margin-bottom: 10px;
@@ -59,15 +64,16 @@ button{
     align-items: center;
     font-weight: bold;
 }
-.planoBasico{
+.planoBasico {
     background-color: rgba(0, 0, 0, 1);
     margin: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 17rem; 
+    width: 16rem;
     border-radius: 15px;
     color: white;
+    height: 33rem;
 }
 .explicationBasic{
     display: flex;
@@ -112,16 +118,18 @@ button{
     width: 17rem; 
     border-radius: 15px;
     color: white;
+    height: 38rem;
 }
-.planoIntermediario{
+.planoIntermediario {
     background-color: rgba(0, 0, 0, 1);
     margin: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 17rem; 
+    width: 16rem;
     border-radius: 15px;
     color: white;
+    height: 31rem;
 }
 #basicB{
     display: flex;
@@ -139,7 +147,7 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
 }
 .tituloExplDoBasico{
     font-weight: bold;
@@ -237,6 +245,19 @@ button{
     text-decoration: none;
     color: black;
 }
+.planoBasico:hover{
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+.planoVip:hover{
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+.planoIntermediario:hover{
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+
 
 
 
@@ -246,20 +267,35 @@ button{
     }
     .descricaoDoservicoB{
         padding: 0 150px 0 150px;
-        }
-        .explicaVideo{
-        padding: 0 150px 0 150px;
-        }
-}
-@media only screen and (min-width: 1055px){
-    .descricaoDoservicoB{
-    padding: 0 150px 0 150px;
     }
     .explicaVideo{
-    padding: 0 150px 0 150px;
+        padding: 0 150px 0 150px;
+    }
+    .planoBasico{
+        height: 37rem;
+    }
+    .planoVip{
+        height: 37rem;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .descricaoDoservicoB{
+        padding: 0 150px 0 150px;
+    }
+    .explicaVideo{
+        padding: 0 150px 0 150px;
     }
     .comeceAgora3 {
         margin-top: 80px;
+    }
+    .planoIntermediario{
+        height: 37rem;
+    }
+    .planoVip{
+        height: 41rem;
+    }
+    .sectionBasicV{
+        margin-top: 35px;
     }
 }
 
@@ -298,9 +334,10 @@ button{
         align-items: flex-start;
     }
     .mainPlanos {
-        height: 70vh;
+        height: 75vh;
         
     }
+    
     
     
 }

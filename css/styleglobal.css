@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@300&display=swap');
 
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-.logoEmpresa img{
+.logoEmpresa img {
     margin: 10px 0px 10px 40px;
 }
-.imgHamburgue{
+
+.imgHamburgue {
     margin-right: 20px;
 }
 
-.cabecalhoCbl{
+.cabecalhoCbl {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: rgba(2, 215, 228, 1);
 }
+
 footer {
     text-align: center;
     padding: 5px;
@@ -34,92 +36,157 @@ footer {
 }
 
 /* Configuração do Menu lateral do W3School. */
-@media only screen and (max-width: 767px){
-    
-.navegacaoMenu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(2, 215, 228, 1);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-  
-.navegacaoMenu a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Merriweather', serif;
-}
-  
-.navegacaoMenu a:hover {
-    color: #f10e0e;
-}
-  
-.navegacaoMenu .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  /* Fim da configuração do Menu lateral */
+@media only screen and (max-width: 767px) {
+
+    .navegacaoMenu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(2, 215, 228, 1);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .navegacaoMenu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #000000;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Merriweather', serif;
+    }
+
+    .navegacaoMenu a:hover {
+        color: #f10e0e;
+    }
+
+    .navegacaoMenu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* Fim da configuração do Menu lateral */
 }
 
 
 /* Início da configuração do Menu horizontal para Table e Desktop pequeno, médio e grande. */
-@media only screen and (min-width: 768px){
-    .logoEmpresa img{
+@media only screen and (min-width: 768px) {
+    .logoEmpresa img {
         margin-left: 80px;
     }
-    .imgHamburgue{
+
+    .imgHamburgue {
         display: none;
     }
-    
-    .navegacaoMenu{
+
+    .navegacaoMenu {
         display: flex;
-        justify-content:space-around;
-        font-size: 20px;
+        justify-content: space-around;
     }
-    .navegacaoMenu a{
+
+    .navegacaoMenu a {
         display: flex;
         padding: 20px 20px 20px 0px;
         text-decoration: none;
+        font-size: 18;
         color: black;
         font-weight: bold;
         font-family: 'Merriweather', serif;
     }
-    .navegacaoMenu a:hover{
+
+    .navegacaoMenu a:hover {
         text-decoration: underline;
         color: white;
         font-weight: bold;
     }
- 
-    #closebtnId{
+
+    #closebtnId {
         display: none;
     }
-    .cadastroDireita{
+
+    .cadastroDireita {
         margin-right: 30px;
     }
 }
-@media only screen and (min-width: 992px){
-    .logoEmpresa img{
+
+@media only screen and (min-width: 992px) {
+    .logoEmpresa img {
         margin-left: 200px;
     }
-    .navegacaoMenu {
-        font-size: 24px;
-    }
+
 
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     .navegacaoMenu a {
         padding: 20px 50px 20px 0px;
     }
 }
+
+
+
+/* Footer */
+
+.footer1 {
+
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+    
+.footer1 .row1 {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+    
+.footer1 .row1 a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+    
+    .footer1 .row1 a:hover{
+    color:#fff;
+    }
+    
+    .footer1 .row ul{
+    width:100%;
+    }
+    
+    .footer1 .row1 ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer1 .row1 a i{
+    font-size:2em;
+    margin:1% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer1 .row1 ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer1 .row1 a i{
+    margin:0% 3%;
+    }
+    }
