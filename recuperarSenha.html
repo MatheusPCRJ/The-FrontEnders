@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página de Recuperação</title>
     <script src="css/recuperarSenha.css"></script>
+    <!-- js do sweet alert  -->
+    <script src="https://sweetalert.js.org/assets/sweetalert/sweetalert.min.js"></script>
     <link rel="stylesheet" href="css/styleglobal.css">
         <!--FONT AWESOME-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,17 +25,18 @@
 
             <div class="row" style="margin-top:20px">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                    <form role="form">
+                    <form role="form" id="formularioMain">
                         <fieldset>
                             <h2>Recuperar Senha</h2>
                             <hr class="colorgraph">
                             <div class="form-group">
                                 <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email cadastrado">
                             </div>
+                            <p id="loginInvalido"></p>
                             <hr class="colorgraph">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+                                    <input type="submit" class="btn btn-lg btn-success btn-block send" value="Enviar">
                                 </div>
                                 
                                 <div class="col-xs-6 col-sm-6 col-md-6">
@@ -74,6 +77,7 @@
     </footer>
 
     <script src="js/recuperarSenha.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
