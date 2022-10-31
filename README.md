@@ -1,4 +1,5 @@
-# 2° Projeto em Grupo - Um produto lançado pela empresa FrontEnders.
+ # 2° Projeto em Grupo
+# Um produto lançado pela empresa FrontEnders que se chama FrontWindows!
 
 <div id="inicio" align=center>
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
