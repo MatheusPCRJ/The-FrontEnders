@@ -1,14 +1,38 @@
 
 //código para mostrar mensagem de cadastrado ao clicar no botão de cadastrar 
 document.querySelector(".btn-primary").addEventListener('click', () => {
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Dados cadastrados',
-        showConfirmButton: false,
-        timer: 2000
-      })
+
+    let campoEmBranco = document.querySelector(".form-control").value;
+    let avisoDePreenchimento = document.querySelector(".my-1010");
+
+    if(campoEmBranco == ""){
+        avisoDePreenchimento.innerHTML=("Faltando preencher os campos em Branco")
+
+    }else{
+        document.querySelector('.needs-validation').addEventListener("submit", function(event){
+        event.preventDefault();
+        });
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Dados cadastrados',
+            showConfirmButton: false,
+            timer: 2000
+        })
+
+        // função para redirecionar para página de login depois que cair no falso (else)
+        setTimeout(() => {
+            window.location.href = 'login.html'
+        }, 3000)
+
+    }
+
+    
 })
+
+
+
 
 //código para limpeza de formulário ao digitar novamente o CEP
 const limparFormulario = (endereco) =>{

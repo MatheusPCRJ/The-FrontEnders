@@ -1,3 +1,4 @@
+// Funfção do Bootstrap
 $(function(){
     $('.button-checkbox').each(function(){
 		var $widget = $(this),
@@ -56,20 +57,53 @@ $(function(){
 		init();
 	});
 });
-
+// FinalFunfção do Bootstrap
 
 
 
 // Função para o login
-let email = document.querySelector('#email');
-let senha = document.querySelector('#password');
-let resposta = document.querySelector('#loginInvalido');
-
 document.querySelector('#botaologin').onclick = function(){
-	if(email.value == "teste@gmail.com" && senha.value == "12345"){
+
+
+	let email = document.querySelector('#email');
+	let senha = document.querySelector('#password');
+	let resposta = document.querySelector('#loginInvalido');
+
+	let lista = []
+
+	let contas = {
+		email: '',
+		senha: '',
+	}
+	
+	lista = JSON.parse(localStorage.getItem('lista'));
+	
+	lista.forEach((item) => {
+		if(email.value == item.getEmail && senha.value == item.getSenha){
+			contas = {
+				email: item.getEmail,
+				senha: item.getSenha,
+			}
+		}else{
+			resposta.innerHTML=('Preencha todos os campos')
+		}
+	})
+
+	
+	if(email.value == "" || senha.value == ""){
+
+		resposta.innerHTML=('Preencha todos os campos')
+
 		document.querySelector('#formularioMain').addEventListener("submit", function(event){
 			event.preventDefault();
 		});
+
+	}else if(email.value == contas.email && senha.value == contas.senha){
+
+		document.querySelector('#formularioMain').addEventListener("submit", function(event){
+			event.preventDefault();
+		});
+
 		Swal.fire({
 			position: 'center',
 			icon: 'success',
@@ -77,28 +111,22 @@ document.querySelector('#botaologin').onclick = function(){
 			showConfirmButton: false,
 			timer: 3500,
 		})
+		resposta.innerHTML=('')
 
-		// perguntar ao professor, sem o preventDefault o Swal.Fire Sweet alert não aparece, pq?
-		
-		
-	}
-	else if(email.value == "" || senha.value == ""){
-		resposta.innerHTML=('Preencha todos os campos')
-		document.querySelector('#formularioMain').addEventListener("submit", function(event){
-			event.preventDefault();
-		});
 	}else{
 		resposta.innerHTML=('Login e Senha incorreta, click em <b>"Esqueceu sua Senha?"</b>')
+		
 		document.querySelector('#formularioMain').addEventListener("submit", function(event){
 			event.preventDefault();
 		});
 	}
 }
-// Função do login acaba aqui.
+
 
 
 
 // Função para mostrar a senha na caixinha
+
 let pegaSenha = document.querySelector('#password');
 function mostraSenha(){
 	if(pegaSenha.type=="password"){

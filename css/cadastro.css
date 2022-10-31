@@ -62,3 +62,11 @@ main{
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+  .my-1010{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+  }
