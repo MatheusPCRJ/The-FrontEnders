@@ -61,7 +61,7 @@ formulário de e-mail enviado.
 
 
 <h2 id="andamento">Andamento do projeto 📈</h2>
-- Incompleto.
+- Completo.
 <br>
 
 <h2 id="linguagens">Softwares & Ferramentas utilizadas nesse projeto 📚</h2>
