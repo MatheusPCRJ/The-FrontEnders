@@ -71,7 +71,14 @@ formulário de e-mail enviado.
   - [x] JavaScript
   - [x] Bootstrap
   - [x] Github
-  
+    
+  <h2 id="linguagens">Ferramentas utilizadas para meios de comunicação e design 📚</h2>
+    
+  - [x] Trello
+  - [x] Figma
+  - [x] WhatsApp
+  - [x] Atividade em Pares, 1 hora
+
 
 <div id="autor" align="center">
   
