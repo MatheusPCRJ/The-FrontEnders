@@ -5,6 +5,7 @@
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
   <a href="#desafio">Desafio</a>&nbsp;&nbsp;&nbsp;
   <a href="#andamento">Andamento</a>&nbsp;&nbsp;&nbsp;
+  <a href="#extras">Extras</a>&nbsp;&nbsp;&nbsp;
   <a href="#linguagens">Softwares & Ferramentas</a>&nbsp;&nbsp;&nbsp;
   <a href="#autor">Autores<a>
 </div>
@@ -59,7 +60,10 @@ e-mail;
 - Deve exibir mensagem após submissão de
 formulário de e-mail enviado.
 
+<h2 id="extras">Extras 📈</h2>
 
+  - [x] Implementamos o LocalStorage. <br>Onde você pode realmente se cadastrar com seu e-mail e fazer o login na página de Login.
+<br>
 
 <h2 id="andamento">Andamento do projeto 📈</h2>
 - Completo.
