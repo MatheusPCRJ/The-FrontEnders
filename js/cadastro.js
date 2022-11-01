@@ -1,17 +1,29 @@
+let avisoDePreenchimento = document.querySelector(".my-1010");
 
-//código para mostrar mensagem de cadastrado ao clicar no botão de cadastrar 
 document.querySelector(".btn-primary").addEventListener('click', () => {
+    let marcador = false;
+    let campoEmBranco = document.querySelectorAll(".form-control");
+    for(let i = 0; i < campoEmBranco.length; i++){
 
-    let campoEmBranco = document.querySelector(".form-control").value;
-    let avisoDePreenchimento = document.querySelector(".my-1010");
-
-    if(campoEmBranco == ""){
-        avisoDePreenchimento.innerHTML=("Faltando preencher os campos em Branco")
-
+    if(campoEmBranco[i].value == ""){
+        let x = campoEmBranco[i].name;
+        i = 13;
+        avisoDePreenchimento.innerHTML=(`Por favor preencha ${x}`);
+        marcador = false;
+        
     }else{
         document.querySelector('.needs-validation').addEventListener("submit", function(event){
         event.preventDefault();
         });
+
+       marcador = true;
+
+       
+
+    }
+    }
+
+    if(marcador == true){
 
         Swal.fire({
             position: 'center',
@@ -20,15 +32,12 @@ document.querySelector(".btn-primary").addEventListener('click', () => {
             showConfirmButton: false,
             timer: 2000
         })
-
         // função para redirecionar para página de login depois que cair no falso (else)
-        setTimeout(() => {
-            window.location.href = 'login.html'
-        }, 3000)
-
+            setTimeout(() => {
+                window.location.href = 'login.html'
+            }, 3000)
     }
 
-    
 })
 
 

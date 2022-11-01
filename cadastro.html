@@ -1,202 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/styleglobal.css">
-    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
-        <!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>The FrontEnders</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/styleglobal.css">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
-    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+  <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<meta name="theme-color" content="#712cf9">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <meta name="theme-color" content="#712cf9">
 
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.css" rel="stylesheet">
+
+  <title>The FrontEnders</title>
 </head>
 
 
-    <header class="cabecalhoCbl">
+<header class="cabecalhoCbl">
 
-        <!-- Logo da empresa -->
-        <div class="logoEmpresa">
-          <a href="index.html"><img src="imagens/The FrontEnders.png" alt="logo da empresa"></a>   
-         </div>
+  <!-- Logo da empresa -->
+  <div class="logoEmpresa">
+    <a href="index.html"><img src="imagens/The FrontEnders.png" alt="logo da empresa"></a>
+  </div>
 
-        <!-- Imagem hamburgue para abrir o menu lateral -->
-        <div class="imgHamburgue">
-            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
-        </div>
+  <!-- Imagem hamburgue para abrir o menu lateral -->
+  <div class="imgHamburgue">
+    <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+  </div>
 
-        <!-- Menu de navegação do site -->
-        <nav class="navegacaoMenu" id="navegacaoId">
-            
-            <!-- Configuração do JavaScript para o Menu Lateral -->
-            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+  <!-- Menu de navegação do site -->
+  <nav class="navegacaoMenu" id="navegacaoId">
 
-            <a href="index.html">Home</a>
-            <a href="planos.html">Serviços</a>
-            <a href="nossocontato.html">Contato</a>
-            <a href="login.html">Login</a>
-            <a href="cadastro.html" class="cadastroDireita">Cadastro</a>
-            
-        </nav>
+    <!-- Configuração do JavaScript para o Menu Lateral -->
+    <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
 
-    </header>
+    <a href="index.html">Home</a>
+    <a href="planos.html">Serviços</a>
+    <a href="nossocontato.html">Contato</a>
+    <a href="login.html">Login</a>
+    <a href="cadastro.html" class="cadastroDireita">Cadastro</a>
 
-    <main>
+  </nav>
+
+</header>
+
+<main>
 
   <body class="bg-light">
-    
-<div class="container">
-  <main>
-    <div class="py-5 text-center">
-  
-      <h2>Formulário de Cadastro</h2>
-      <p class="lead">Preencha os campos abaixo para se cadastrar em nosso site</p>
+
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+
+          <h2>Formulário de Cadastro</h2>
+          <p class="lead">Preencha os campos abaixo para se cadastrar em nosso site</p>
+        </div>
     </div>
-      </div>
 
-      <div class="col-md-7 col-lg-8">
-       
-        <form class="needs-validation" novalidate>
-          <div class="row g-3" id="rowG3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+    <div class="col-md-7 col-lg-8">
+
+      <form class="needs-validation" novalidate>
+
+        <div class="row g-3" id="rowG3">
+
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="firstName" name="o nome" placeholder="" value="" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="lastName" name="o sobrenome" required>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="email" class="form-label">E-mail <span class="text-muted"></span></label>
+            <input type="email" class="form-control" id="email" name="o email" placeholder="email@email.com" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="username" class="form-label">Nome de Usuário</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="username" name="o nome do usuario" placeholder="nome de usuário" required>
               <div class="invalid-feedback">
-               
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha" name="a senha" placeholder="6 dígitos" value="" required>
+              <div class="invalid-feedback">
+
               </div>
             </div>
 
             <div class="col-sm-6">
-              <label for="lastName" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control" id="lastName" required>
-            </div>
-            <div class="col-sm-6">
-              <label for="email" class="form-label">E-mail <span class="text-muted"></span></label>
-              <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
-              <div class="invalid-feedback">
-                
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <label for="username" class="form-label">Nome de Usuário</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="nome de usuário" required>
-              <div class="invalid-feedback">
-                </div>
-              </div>
-            </div>
-
-            
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <label for="firstName" class="form-label">Senha</label>
-                  <input type="password" class="form-control" id="senha" placeholder="6 dígitos" value="" required>
-                  <div class="invalid-feedback">
-                   
-                  </div>
-                </div>
-    
-                <div class="col-sm-6">
-                  <label for="confsenha" class="form-label">Confirmação de senha</label>
-                  <input type="password" class="form-control" id="confsenha" required>
-                </div>
-    
-
-            <div class="col-12">
-              <label for="endereco" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="endereco" required>
-            </div>
-            <div class="col-md-4">
-              <label for="numero" class="form-label">Número</label>
-              <input type="text" class="form-control" id="numero" required>
-            </div>
-            <div class="col-md-4">
-              <label for="complemento" class="form-label">Complemento</label>
-              <input type="text" class="form-control" id="Complemento">
-            </div>
-            <div class="col-md-4">
-              <label for="bairro" class="form-label">Bairro</label>
-              <input type="text" class="form-control" id="bairro" required>
-            </div>
-
-            <div class="col-md-4">
-              <label for="estado" class="form-label">Estado</label>
-              <input type="text" class="form-control" id="estado" required>
-              
-            </div>
-            <br>
-
-            <div class="col-md-4">
-              <label for="cidade" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="cidade" required>
-              
+              <label for="confsenha" class="form-label">Confirmação de senha</label>
+              <input type="password" class="form-control" id="confsenha" name="o confirmar a senha" required>
             </div>
 
             <div class="col-md-4">
               <label for="cep">CEP</label>
-              <input type="text" class="form-control" id="cep" required>
-              
+              <input type="text" class="form-control" id="cep" name="o cep" required>
+
             </div>
+
+            <div class="col-12">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="endereco" name="o endereço" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="numero" class="form-label">Número</label>
+              <input type="text" class="form-control" id="numero" name="o numero" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="complemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="Complemento" name="o complemento">
+            </div>
+
+            <div class="col-md-4">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" name="o bairro" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="estado" class="form-label">Estado</label>
+              <input type="text" class="form-control" id="estado" name="o estado" required>
+            </div>
+
+            <br>
+
+            <div class="col-md-4">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="cidade" name="a cidade" required>
+            </div>
+
+
           </div>
 
 
           <p class="my-1010"></p>
           <div class="classeDoBotao" style="width: min(7rem, 32%)">
-            <button class="w-100 btn btn-primary btn-lg" type="submit" style="margin-bottom:20px; display:flex; justify-content: center; font-size: 17px" >Cadastrar</button>
+            <button class="w-100 btn btn-primary btn-lg" type="submit"
+              style="margin-bottom:20px; display:flex; justify-content: center; font-size: 17px">Cadastrar</button>
           </div>
-          
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
-    
-  </main>
-      
-    <!-- footer -->
-    <footer>
-      <div class="footer1">
-          <div class="row1">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-youtube"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-          </div>
+  </body>
 
-          <div class="row1">
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="planos.html">Nossos Serviços</a></li>
-                  <li><a href="nossocontato.html">Nosso Equipe</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="cadastro.html">Cadastra-se</a></li>
-              </ul>
-          </div>
+</main>
 
-          <div class="row1">
-              FrontWindow Copyright © 2022 FrontWindow - Todos os direitos reservados
-          </div>
-      </div>
-  </footer>
+<!-- footer -->
+<footer>
+  <div class="footer1">
+    <div class="row1">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
 
-    <script src="js/localStorage.js"></script>
-    <script src="js/cadastro.js"></script>
-    <script src="js/jsglobal.js"></script>
-    <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div class="row1">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planos.html">Nossos Serviços</a></li>
+        <li><a href="nossocontato.html">Nosso Equipe</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastra-se</a></li>
+      </ul>
+    </div>
 
-      <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
+    <div class="row1">
+      FrontWindow Copyright © 2022 FrontWindow - Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+
+<script src="js/localStorage.js"></script>
+<script src="js/cadastro.js"></script>
+<script src="js/jsglobal.js"></script>
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
 </body>
+
 </html>
