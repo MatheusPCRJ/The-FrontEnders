@@ -1,5 +1,11 @@
- # 2° Projeto em Grupo
-# Um produto lançado pela empresa FrontEnders que se chama FrontWindows!
+<h1 align="center"> 2° Projeto em Grupo – The Frontenders </h1>
+
+<h6 align="center">Projeto realizado em parceria com   
+<a href="https://prefeitura.rio/desenvolvimento-economico-inovacao-simplificacao/programadores-cariocas-comemoram-formatura-na-cidade-das-artes/"        target="_blank">Prefeitura RJ </a> + 
+<a href="https://www.resilia.com.br/" target="_blank">Resilia</a> + 
+<a href="https://www.rj.senac.br/" target="_blank">Senac.</a> </h6>
+<a href="" target="_blank"></a>
+
 
 <div id="inicio" align=center>
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
@@ -11,6 +17,7 @@
 </div>
 
 <h2 id="sobre">Sobre 🔎</h2>
+Um produto lançado pela empresa FrontEnders que se chama FrontWindows!
   <p>Projeto onde nos precisavamos desenvolver uma ideia de como criar facilidade no dia a dia de um programador, por exemplo boas maneiras de HTML e CSS
    etc. Nos invés de criar boas maneiras, criamos um site pensando em usuários iniciantes para que ele possa dá seus primeiros passos no mundo da programação,
    como mostramos um layout de como utilizar as tags corretas no lugares corretos. Para mais detalhes só acessar nossos Planos. </p>
